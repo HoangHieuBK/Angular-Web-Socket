@@ -7,7 +7,7 @@ import * as uuid from 'uuid';
 
 export class WebSocketApiService {
 
-  webSocketEndPoint = 'http://192.168.9.188:8067/ws';
+  webSocketEndPoint = 'http://192.168.9.99:8067/ws';
   topic = '/user/queue/sync-devices';
   stompClient: any;
   requestId = null;

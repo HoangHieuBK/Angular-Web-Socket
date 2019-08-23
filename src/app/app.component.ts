@@ -17,7 +17,7 @@ export class AppComponent implements OnInit {
   ngOnInit() {
     this.webSocketAPI = new WebSocketApiService();
     console.log('hai  = ', this.webSocketAPI.requestId);
-    const url = 'http://192.168.9.188:8066/devices/sync?deviceType=1&requestId=' + this.webSocketAPI.requestId + '&deploymentId=1';
+    const url = 'http://192.168.9.99:8066/devices/sync?deviceType=1&requestId=' + this.webSocketAPI.requestId + '&deploymentId=1';
     this.httpClient.get(url).subscribe();
   }
 
